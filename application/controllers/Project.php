@@ -267,6 +267,19 @@ $this->db->update('scriptolutionprojects', $data);
 
 	
 
+		public function deletedproject()
+	{
+	
+		$query=$this->db->select('*')->from('scriptolutionprojects')->join('members', 'scriptolutionprojects.USERID = members.USERID')->where('scriptolutionprojects.active', 3)->get();
+		$data['result']=$query->result_array();
+
+		$this->load->view('inc/header');
+		$this->load->view('inc/navbar');
+		$this->load->view('Project/deletedproject',$data);
+		$this->load->view('inc/footer');
+		
+		
+	}
 
 	
 	

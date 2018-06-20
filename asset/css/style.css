@@ -1,0 +1,3075 @@
+/*
+    FONT FACE HERE
+*/
+@font-face { font-family: "proxima"; src: url("../fonts/proximabold.otf") format("opentype"); font-weight: 500; }
+@font-face { font-family: "proxima"; src: url("../fonts/proximalight.otf") format("opentype"); font-weight: 200; }
+@font-face { font-family: "proxima"; src: url("../fonts/proximaregular.otf") format("opentype"); font-weight: 300; }
+@font-face { font-family: "proxima"; src: url("../fonts/proximaextrabold.otf") format("opentype"); font-weight: 600; }
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+
+body{
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'Lato', sans-serif;
+    background: #f1f1f1;
+    color: #777;
+    text-align: left;
+}
+
+
+h1{
+    font-size:36px;
+}
+
+h2{
+    font-size:24px;
+}
+
+h3{
+    font-size:22px;
+}
+
+h4{
+    font-size:20px;
+}
+
+h5{
+    font-size:18px;
+}
+
+h6{
+    font-size:16px;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    margin:15px 0px;
+   font-family: "proxima";
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #333333;
+    
+}
+
+ul, li{
+    list-style: none;
+    list-style-type: none;
+    padding: 0px;
+    margin:0px;
+   
+}
+
+button,
+a{
+    text-decoration: none;
+          -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+     -ms-transition: all 1s ease-in-out;
+     transition: all 1s ease-in-out;
+    
+}
+
+button:hover,
+a:hover{
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    text-decoration: none;
+    
+}
+
+
+/*
+==================================================================
+        global  CSS STYLING HERE
+==================================================================
+*/
+
+
+
+.marginRow{
+    margin-top:30px;
+}
+
+.forpaddingupdw{
+    padding:50px 0px;
+}
+.error{
+color:red!important;
+}
+
+
+
+/*
+==================================================================
+        NAVBAR CSS STYLING HERE
+==================================================================
+*/
+
+header {
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+}
+
+.mainavbararea {
+	background: #fff !important;
+	border: none !important;
+	border-radius: 0px !important;
+	padding: 0px 0px 0px 0px!important;
+    margin:0px!important;
+}
+.logoarea {
+
+}
+.logoarea img{
+
+}
+
+.maincollapsearea{}
+.maincollapsearea ul{}
+.maincollapsearea ul li{}
+.maincollapsearea ul li a {
+	padding: 20px 30px !important;
+	color: #585757!important;
+	font-weight: 300;
+	text-transform: capitalize;
+	letter-spacing: 0.5px;
+	font-size: 14px!important;
+    display: inline-block;
+    font-family: "proxima";
+}
+.maincollapsearea ul li a:hover{
+    color: #20B251!important;
+    background: none!important;
+}
+
+
+.maincollapsearea ul li a.active{
+    color: #20B251!important;
+    background: transparent!important;
+}
+
+.navbar-nav > li.dropdown:hover > a, 
+.navbar-nav > li.dropdown:hover > a:hover,
+.navbar-nav > li.dropdown:hover > a:focus {
+    background-color: none!important;
+    color: #20B251!important;
+    border-radius: 0px!important;
+    font-family: "proxima"!important;
+    font-weight: 300!important;
+  
+    
+}
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu{
+    margin:0px!important;
+    border-radius: 0px!important;
+      font-size: 13px!important;
+    padding: 0px!important;
+}
+
+
+.mainDropDownlist .dropdown-menu{}
+.mainDropDownlist .dropdown-menu a{
+    padding:8px 20px!important;
+    text-transform: inherit!important;
+    font-weight: 300!important;
+    font-family: "proxima";
+}
+
+
+
+.maincollapsearea li a.postajobbutton {
+	background:#20B251;
+	color: #fff!important;
+	font-weight: 600;
+    text-transform: inherit!important;
+}
+
+
+.maincollapsearea li a.postajobbutton:hover{
+	background: #10C64D!important;
+	color: #fff!important;
+	font-weight: 600;
+}
+
+
+
+/*
+    =====================================================
+        AFTER LOGIN NAVBAR CSS
+    =====================================================
+*/
+
+
+.maincollapsearea ul li.afloginnaven{
+    position: relative;
+}
+.maincollapsearea ul li.afloginnaven a {
+	padding: 20px 10px !important;
+	font-size: 18px !important;
+}
+.maincollapsearea ul li.afloginnaven a i{}
+.maincollapsearea ul li.afloginnaven a sap {
+	font-size: 12px;
+	position: absolute;
+	top: 10px;
+	background: #20B251;
+	color: #fff;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	border-radius: 20px;
+	left: 20px;
+}
+
+.afloginnavenfirst{
+    margin-right: 15px;
+}
+
+
+
+
+
+
+
+.maincollapsearea ul li.notificationlistmain{
+    position: relative;
+}
+.maincollapsearea ul li.notificationlistmain .notificationbell{}
+.maincollapsearea ul li.notificationlistmain .notificationDetails {
+	border: 1px solid #20b251;
+	padding: 15px;
+	width: 250px;
+	display: none;
+	position: absolute;
+	z-index: 20;
+	background: #fff;
+	right: 0;
+}
+.maincollapsearea ul li.notificationlistmain .notificationDetails ul{}
+.maincollapsearea ul li.notificationlistmain .notificationDetails ul li{
+    display: inline-block;
+    font-size: 14px!important;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.maincollapsearea ul li.notificationlistmain .notificationDetails ul li:last-child{
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.maincollapsearea ul li.notificationlistmain .notificationDetails ul li a{
+    display: inline-block;
+    font-size: 14px!important;
+    color: #20b251!important;
+    padding: 0px!important;
+}
+.maincollapsearea ul li.notificationlistmain .notificationDetails ul li a:hover{}
+
+
+
+
+
+
+
+
+
+/*
+==================================================================
+        BANNERAREA CSS STYLING HERE
+==================================================================
+*/
+
+
+
+.bannerarea{
+    background: url('../img/scriptolution_banner.jpg');
+    background-repeat:no-repeat;
+    background-position: top center;
+    background-size:cover;
+    width:100%;
+    height:100%;
+    min-height:620px;
+   
+}
+
+
+
+.bannerinnform{
+    color: #fff;
+    text-align: center;
+    padding-top:120px;
+}
+.bannerinnform h1 {
+	font-size: 60px;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	word-spacing: 1px;
+	color: #fff;
+	font-weight: 500;
+}
+.bannerinnform p{
+    font-size: 20px;
+}
+
+.searchformbanner{
+   
+}
+.searchformbanner form {
+	text-align: center;
+	margin: 0px auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+.searchformbanner input {
+	border: none;
+	height: 50px;
+	border-radius: 5px 0px 0px 5px;
+	width: 40%;
+	padding: 20px;
+}
+.searchformbanner button {
+	border-radius: 0px 5px 5px 0px;
+	border: none;
+	height: 50px;
+	width: 15%;
+	text-transform: capitalize;
+	color: #fff;
+	background: #20B251;
+    cursor: pointer;
+    font-size: 17px;
+}
+.submitbutton{}
+
+
+
+
+/*
+==================================================================
+        BANNERAREA CSS STYLING HERE
+==================================================================
+*/
+
+
+
+.allcategoriesarea{}
+
+.allcattitle{
+    text-align: center;
+}
+.allcattitle h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top:0px;
+}
+.allcattitle p{
+    font-size: 20px;
+    color: #333;
+    font-weight: 200;
+}
+
+
+
+.single_catarea {
+	border: 1px solid #dbdbdb;
+padding: 10px;
+}
+
+
+.single_catarea figure a img{
+    width:100%;
+     transition: all 0.5s ease-in-out;
+   opacity: 0.8;
+}
+
+.single_catarea figure a img:hover{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.single_catarea h5 {
+	margin-bottom: 0px;
+	text-align: center;
+}
+.single_catarea h5 a{
+    display: inline-block;
+        color: #333;
+}
+
+.single_catarea h5 a:hover{
+        color: #20B251;
+}
+
+
+
+
+
+.allcategorieslink{
+    text-align: center;
+}
+.allcategorieslink a {
+	text-align: center;
+	display: inline-block;
+}
+
+.seecatbutton {
+	background: #20B251;
+	color: #fff;
+	text-transform: capitalize;
+	padding: 12px 25px;
+	border-radius: 5px;
+}
+.seecatbutton:hover{
+	background: #3aafa9;
+	color: #fff;
+	
+}
+
+
+
+
+/*
+==================================================================
+        RECENTLY POSTED JOB CSS STYLING HERE
+==================================================================
+*/
+
+.recentlypostedarea{}
+
+.recentjobfiltering {
+	display: flex;
+	align-items: center;
+	background: #fff;
+	padding: 20px 10px;
+    border: 1px solid #ddd;
+}
+.filteringtitle{
+    margin-right: 20px;
+}
+.filteringtitle span{
+    text-transform: capitalize;
+    font-weight: 600;
+    display: block;
+    font-size: 16px;
+    color: #333;
+}
+.filteringdetailsb{}
+.filteringdetailsb a {
+	display: inline-block;
+	text-transform: capitalize;
+	background: #20B251;
+	padding: 8px 15px;
+	margin-right: 10px;
+	color: #fff;
+	border-radius: 5px;
+	border: 2px solid #20B251;
+}
+
+
+.singleRecentJpostarea {
+	display: flex;
+	background: #fff;
+	padding: 40px;
+	border: 1px solid #ddd;
+    margin-bottom: 20px;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    text-decoration: none;
+}
+
+.singleRecentJpostarea:hover{
+    border:1px solid #20B251;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    text-decoration: none;
+    
+}
+
+.recentproarealeft{
+    flex:1;
+}
+
+.singleRproarea h3 {
+	text-transform: capitalize;
+	text-align: left;
+	font-size: 18px;
+}
+.singleRproarea h3 a {
+	color: #20B251;
+	display: inline-block;
+}
+
+.singleSkills{}
+.singleSkills span {
+	display: inline-block;
+}
+.singleSkills span a {
+	display: inline-block;
+	text-transform: uppercase;
+	margin-right: 5px;
+	color: #4D4D4D;
+	font-weight: 600;
+    font-size: 12px;
+}
+.singleRprodetails {
+    margin-top:15px;
+}
+.singleRprodetails ul{}
+.singleRprodetails ul li {
+	display: inline-block;
+    color: #4D4D4D;
+    margin-right:10px;
+    font-weight: 600;
+}
+.singleRprodetails ul li span{
+    display: inline-block;
+    font-weight: 400;
+    margin-right:5px;
+}
+.singleRprodetails ul li i{
+    color: #4D4D4D;
+    margin-right:3px;
+}
+
+
+
+
+.recentsidebarjob{}
+.singleRjpostarea{
+    text-align: center;
+}
+.singleRjpostarea ul{}
+.singleRjpostarea ul li {
+	display: block;
+    font-weight: 600;
+    
+}
+.singleRjpostarea ul li i{
+    color: #20B251;
+    font-size: 22px;
+}
+.singleRjpostarea ul li span{
+    display: inline-block;
+    margin-right:5px;
+    font-weight: 400;
+    
+}
+.singleRjpostarea button {
+	background: #20B251;
+	color: #fff;
+	border: none;
+	padding: 10px 40px;
+	font-size: 14px;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-top: 10px;
+    border:2px solid transparent;
+}
+.singleRjpostarea button:hover{
+    color: #20B251;
+    border:2px solid #20B251;
+    background: none;
+}
+
+.pricefsize{
+    font-size: 24px;
+    font-weight: 700;
+}
+.pricecategoryara {
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 10px 0px 0px;
+}
+
+
+
+
+
+
+
+
+/*
+==================================================================
+        BROWSE CATEGORY JOB CSS STYLING HERE
+==================================================================
+*/
+
+
+
+
+.browsetopcatarea {
+	background: #00928a;
+}
+.brtsjtitle{}
+.brtsjtitle h2{
+    color: #ddd;
+}
+.single_brtocatarea{}
+.single_brtocatarea ul{}
+.single_brtocatarea ul li {
+	display: block;
+	margin-bottom: 5px;
+	border-bottom: 1px dashed #bebebe;
+	padding: 0px 0px 6px;
+}
+.single_brtocatarea ul li a{
+    display: block;
+    text-transform: capitalize;
+    color: #fff;
+}
+.single_brtocatarea ul li a i{
+    margin-right: 3px;
+    display: inline-block;
+    color: #fff;
+}
+.single_brtocatarea ul li a:hover{}
+
+
+
+
+/*
+==================================================================
+         FOOTER TOP LIST CSS STYLING HERE
+==================================================================
+*/
+
+
+
+
+.footerlisttoparea{
+    background: #333;
+}
+.singleFoterlistarea{}
+.singleFoterlistarea h4{
+    color: #ccc;
+}
+
+.singleFoterlistarea h4 span {
+	color: #20B251;
+	display: inline-block;
+	text-transform: capitalize;
+	font-weight: ;
+}
+.singleFoterlistarea ul{
+    text-align: left;
+}
+.singleFoterlistarea ul li{
+    display: block;
+    margin-bottom: 5px;
+}
+.singleFoterlistarea ul li a{
+    display: block;
+    color: #888;
+    text-transform: capitalize;
+}
+.singleFoterlistarea ul li a:hover{
+    color: #20B251;
+}
+
+
+
+.emailconfirmationarea{
+    background: #fff;
+    text-align: center;
+    margin:0px auto;
+}
+
+.emailresendconfirmation img{}
+.emailresendconfirmation h2 {
+	color: #20b251;
+	text-transform: inherit;
+}
+
+
+/*
+==================================================================
+         FOOTER  CSS STYLING HERE
+==================================================================
+*/
+
+footer{
+    background: #222;
+    padding: 30px 0px;
+}
+
+.copyright{}
+.copyright p{
+    text-align: left;
+    color: #ddd;
+    text-transform: capitalize;
+}
+.socialmedifooter{}
+.socialmedifooter ul{
+    text-align: right;
+}
+.socialmedifooter ul li{
+    display: inline;
+}
+.socialmedifooter ul li a {
+	display: inline-block;
+	width: 30px;
+	background: #333;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+	color: #ddd;
+	border-radius: 2px;
+}
+.socialmedifooter ul li a i{}
+.socialmedifooter ul li a:hover{
+    background: #000;
+}
+
+
+
+/*
+==================================================================
+==================================================================
+         REFEREL PAGE  CSS STYLING HERE
+==================================================================
+==================================================================
+*/
+
+
+
+.referealpagearea {
+	height: 100%;
+	padding: 100px 0px;
+	background: #f1f1f1;
+}
+.referelpaginner{
+    text-align: center;
+    color: #333;
+
+}
+.referelpaginner h2 {
+	color: #333;
+	font-size: 32px;
+}
+.referelpaginner p {
+	width: 40%;
+	margin: 15px auto;
+}
+
+
+.referbyemail{}
+.referbyemail form {
+	display: flex;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+.referbyemail input {
+	border: none;
+	padding: 10px;
+	height: 40px;
+	width: 30%;
+    border: 1px solid #3aafa9;
+}
+.referbyemail button {
+	border: none;
+	text-transform: capitalize;
+	height: 40px;
+	padding: 10px 20px;
+	text-align: center;
+	background: #3aafa9;
+	color: #fff;
+	cursor: pointer;
+     border: 1px solid #3aafa9;
+}
+
+.referebysocialmei{}
+.referebysocialmei button{
+    color: #fff;
+    text-transform: capitalize;
+     border:none;
+    padding:10px 20px;
+    cursor: pointer;
+    margin-right:10px;
+}
+.referebysocialmei button i{
+    font-size: 18px;
+}
+.facebookbutton{
+    background: #3B5998;
+}
+.twitterbutton{
+    background:#1DA1F2;
+}
+.gplusbutton{
+    background: #DB4437;
+}
+
+.linkedbutton{
+    background: #0077B5;
+}
+.pinterestbutton{
+    background: #BD081C;
+}
+
+
+.shareyourlinks {
+	color: #333;
+	font-size: 16px;
+	text-transform: capitalize;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+
+
+/*
+==================================================================
+==================================================================
+         LOG IN, SIGN UP & FORGOT PASS PAGE  CSS STYLING HERE
+==================================================================
+==================================================================
+*/
+
+
+
+.loginpagearea{
+    background: #ddd;
+}
+.loginpageinner {
+	text-align: center;
+	background: #fff;
+	padding: 20px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+}
+.logintitle{}
+.logintitle h4{
+    font-weight: 500;
+}
+.logintitle h4 a{
+    color:#20B251;
+    display: inline-block;
+}
+
+.logintitle h2{
+    font-size: 39px;
+}
+
+
+
+.socialmedisignin{
+    margin:20px 0px;
+}
+.socialmedisignin a {
+	color: #fff;
+	padding: 10px 20px;
+	text-transform: capitalize;
+	margin-right: 10px;
+	display: inline-block;
+}
+
+.loginfacebook{
+    background: #3B5998;
+}
+.loginlinkedin{
+    background: #0077B5;
+}
+.alternativenextor{}
+
+
+.alternativenextor span {
+	font-size: 20px;
+	text-transform: lowercase;
+	display: block;
+	margin-bottom: 20px;
+	border: 1px solid #f1f1f1;
+	padding: 5px;
+	width: 40px;
+	height: 40px;
+	line-height: 28px;
+	text-align: center;
+	margin: 0px auto 20px;
+	border-radius: 40px;
+}
+.loginemailuserarea{}
+
+.loginemailuserarea form{}
+.loginemailuserarea form input {
+	display: block;
+	text-align: left;
+	margin: 0px auto 15px;
+	border: 1px solid #20B251;
+	height: 35px;
+	padding-left: 10px;
+	width: 70%;
+	height: 42px;
+    border-radius: 3px;
+}
+.remembermearea {
+	display: flex;
+	width: 70%;
+	text-align: center;
+	margin: 0px auto;
+	line-height: 30px;
+}
+.remembermearea label{
+    margin:0px!important;
+    cursor: pointer;
+}
+.remembermearea input {
+	margin: 0px !important;
+	width: auto !important;
+	height: auto !important;
+	display: inline-block!important;
+}
+.remembermearea span {
+	display: inline-block;
+	text-align: right;
+	flex: 1;
+}
+.remembermearea span a{
+    display: inline-block;
+    text-transform: lowercase;
+    color: #13a7fc;
+    text-decoration: underline;
+}
+
+.loginemailuserarea button {
+	background: #20B251;
+	color: #fff;
+	border: 2px solid transparent;
+	padding: 10px 70px;
+	display: block;
+	margin: 30px auto 0px;
+    cursor: pointer;
+}
+
+.loginemailuserarea button:hover{
+    background: none;
+    border:2px solid #20B251;
+    color: #20B251;
+    text-transform: capitalize;
+}
+
+
+.hireworkinput {
+	margin-bottom: 15px;
+	width: 70%;
+	margin: 10px auto;
+    text-align: left;
+}
+
+.hireworkinput h6{
+    font-weight: 600;
+    margin:0px 0px 10px;
+}
+
+.hireworkinput label{
+    margin:0px;
+        cursor: pointer;
+
+}
+
+.hireworkinput input {
+	display: inline-block !important;
+	width: auto !important;
+	height: auto !important;
+	margin: 0px !important;
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+	background-color: #20B251;
+}
+.custom-control-label::before {
+	background-color: #888;
+}
+
+
+
+
+
+/*
+==================================================================
+==================================================================
+         POST A JOB PAGE  CSS STYLING HERE
+==================================================================
+==================================================================
+*/
+
+
+
+.postajobarea{
+    background: #ddd;
+}
+.postajobareainner{
+    background: #fff;
+    border-radius: 5px;
+    border:2px solid #ccc;
+    padding:20px;
+}
+
+.postajobareainner h2{
+    font-size: 39px;
+}
+.postajobareainner form{}
+.single_postjobelement {
+	margin-bottom: 40px;
+}
+
+.single_browfilter form label,
+.single_postjobelement label {
+	color: #333;
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.single_postjobelement span.subtitlespan{
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+.single_browfilter form select,
+.single_browfilter form input,
+.single_postjobelement select,
+.single_postjobelement input,
+.single_postjobelement textarea{
+    box-shadow: none!important;
+    outline: none!important;
+    font-size: 13px;
+}
+
+.single_postjobelement textarea{
+    margin:15px 0px;
+    height: 220px;
+}
+
+
+.single_browfilterone input[type="submit"],
+.postajobareainner input[type="submit"]{
+   cursor: pointer;
+	background:#20B251;
+	color: #fff;
+	border: none;
+	text-transform: capitalize;
+	text-align: center;
+	margin: 0px auto;
+	padding: 10px 80px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+
+/*
+==================================================================
+==================================================================
+    BROWSE PROJECT PAGE  CSS STYLING HERE
+==================================================================
+==================================================================
+*/
+
+.brosweprojectsarea{
+    
+}
+.browserprosidebar{
+    padding: 20px;
+    background: #fff;
+}
+
+.single_browfilter{
+    margin-bottom: 20px;
+}
+.single_browfilter {}
+.single_browfilter select,
+.single_browfilter input{
+    margin-bottom: 10px;
+}
+
+
+
+.filteringsubmitb{
+    background: #20B251;
+    margin-right:10px;
+
+}
+
+
+.resetallfilters{
+    background: #3aafa9;
+}
+
+
+
+.filteringsubmitb,
+.resetallfilters{
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 30px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+
+
+
+.browseProRightarea{}
+.brofiltitlearea{}
+.brofiltitlearea h2{
+    margin-top:0px;
+    font-size: 40px;
+    text-align: left;
+    
+}
+
+.brofiltitlearea2 h2{
+    text-align: center;
+}
+
+
+.browfilteringsin{
+  margin-top:20px;
+}
+
+.browerecentsingarea{
+    margin-right:10px;
+}
+
+
+
+.paginationList {
+	background: #fff;
+	padding: 20px;
+}
+.paginationList ul{
+    text-align: center;
+}
+.paginationList ul li{
+    display: inline;
+    margin-right: 6px;
+}
+.paginationList ul li a{
+    display: inline-block;
+    text-transform: capitalize;
+    border:1px solid #3aafa9;
+    color: #3aafa9;
+    padding:5px 10px;
+    
+}
+
+
+.paginationList ul li a:hover,
+.paginationList ul li.active a{
+    background: #3aafa9;
+    color: #fff;
+    border:1px solid transparent;
+
+    
+}
+
+
+
+/*
+==================================================================
+==================================================================
+    BROWSE CATEGORY PAGE  CSS STYLING HERE
+==================================================================
+==================================================================
+*/
+
+
+
+.browseCatarea{}
+.singleProCat {
+
+}
+.singleProCat h4 {
+	color: #20B251;
+	font-size: 30px;
+	font-weight: 300;
+    margin-top: 0px;
+}
+.singleProCat ul{}
+.singleProCat ul li{
+    margin-bottom: 5px;
+}
+.singleProCat ul li a {
+	color: #777;
+	display: inline-block;
+}
+.singleProCat ul li a i{
+    margin-right:5px;
+}
+.singleProCat ul li a:hover{
+    color: #20B251;
+}
+
+.singleColumnbcat{
+    	background: #fff;
+	padding: 20px;
+    margin-bottom:0px;
+    border: 1px solid #ddd;
+}
+
+
+
+.browsecatareamain{
+    background: #fff;
+}
+
+.singleProCat2 {
+	background: #fff;
+	padding: 0px 10px 20px 10px;
+	/* border-left: 2px solid #ddd; */
+	box-shadow: 0px 3px 5px -2px #ddd;
+    margin-bottom: 20px;
+}
+.singleProCat2 ul{
+    display: flex;
+    padding-left: 5px;
+    margin-left:20px;
+    flex-wrap: wrap;
+}
+.singleProCat2 ul li{
+    display: inline;
+    width: calc(100% * (1/4) - 10px - 1px);
+    flex-grow: 1;
+}
+.singleProCat2 ul li a{
+    display: inline-block;
+}
+
+.singleProCat2 ul li a:hover{
+    display: inline-block;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+==================================================================
+==================================================================
+    SINGLE JOB POST PAGE  CSS STYLING HERE
+==================================================================
+==================================================================
+*/
+
+
+.singleProDetarea{}
+.singleProDeinarea{}
+.singlepdtitle{}
+.singlepbudtimearea {
+	display: flex;
+	border: 1px solid #ddd;
+	background: #fff;
+	padding: 10px;
+}
+.singbudgetonly {
+	flex: 1;
+	border-right: 1px solid #ddd;
+}
+.singbudgetonly ul{}
+.singbudgetonly ul li{
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin-right: 15px;
+    font-weight: 600;
+}
+.singbudgetonly ul li span {
+	display: block;
+	color: #20B251;
+	font-size: 22px;
+	margin: 10px auto 0px;
+}
+
+.singtimeframonly{
+     flex: 1;
+    border-right: 1px solid #ddd;
+}
+.singletimeopen{
+    text-align: center;
+  
+}
+.singletimeopen p{
+    color: #777777;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin:0px;
+}
+.singletimeopen h4{
+    margin-bottom: 0px;
+    color: #20B251;
+    text-transform: uppercase;
+}
+
+
+
+.singleprbidbutton{
+    flex: 1;
+}
+.spbidbutton{
+    text-align: right;
+}
+.spbidbutton a {
+	background: #20B251;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+    display: inline-block;
+	text-transform: inherit;
+	padding: 20px 20px;
+	font-weight: 600;
+}
+
+
+
+
+
+
+.sprojobdetailsmainare{
+    display: flex;
+    padding:30px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+.sprojectDescription {
+	/* flex: 1; */
+	width: 70%;
+	margin-right: 20px;
+}
+.sprojectDescription h5{
+    color: #333;
+    text-transform: capitalize;
+    margin-top:0px;
+}
+.sprdeslist{}
+.sprdeslist ul{
+    padding: 0px 0px 20px; 
+}
+.sprdeslist ul li{
+    margin:3px 0px;
+    color: #333;
+}
+.sprdeslist ul li span{
+    display: inline-block;
+    margin-left:5px;
+    font-weight: 600;
+}
+.sprdeslist ul li span a{
+    margin-left:5px;
+    text-transform: capitalize;
+    display: inline-block;
+    color: #20B251;
+}
+
+
+.sprobuyerinfoarea {
+	text-align: center;
+	width: 30%;
+	background: #f1f1f1;
+	padding: 10px;
+	border: 1px solid #c3c3c7;
+}
+.sprobuyerinfoarea figure{}
+.sprobuyerinfoarea figure img{
+    width: 40%;
+    margin:0px auto 10px;
+    
+}
+.sprobuyerinfoarea figure figcaption {
+	font-weight: 600;
+}
+.buyerreviews{}
+.buyerreviews span{
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+}
+.buyerreviews ul{}
+.buyerreviews ul li{
+    display: inline-block;
+}
+.buyerreviews ul li i{
+    color: #ffd800;
+}
+
+
+
+
+
+
+/*
+===============================
+    FREELANCER BID CSS
+==============================
+*/
+
+
+.freebidtitlearea {
+	display: flex;
+	background: #20B251;
+	padding: 10px 20px;
+}
+.freebidtitlearea h4{
+   
+    color: #fff;
+}
+
+.freebidtitlefr{
+    text-align: left;
+     flex:1;
+}
+.reputationtitlefree{
+    text-align: center;
+     flex:1;
+}
+.bidtitlefree{
+    text-align: right;
+     flex:1;
+}
+
+.freebidareadetails {
+	display: flex;
+	padding: 20px;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+}
+
+.freebidavatar{
+    flex: 1;
+}
+.freebidavatar a {
+	display: flex;
+	align-items: center;
+}
+.freebidavatar a img {
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+}
+.freebidavatar a figcaption {
+	font-weight: 600;
+	color: #333;
+}
+
+
+.freebidreputation{
+    text-align: center;
+    flex: 1;
+}
+.freebidreputation ul{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.freebidreputation ul li{
+    display: inline-block;
+}
+.freebidreputation ul li i{
+    color: #ffd800;
+}
+
+.freebidreputation a{
+    text-transform: capitalize;
+    color: #20B251;
+    display: inline-block;
+}
+
+.freebidprice {
+	flex: 1;
+	text-align: right;
+}
+
+.freebidprice p{
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.freebidprice p span{
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top:5px;
+}
+
+
+.adthisocialshareicons{
+    background: #fff;
+    padding: 10px;
+}
+
+
+.profilephotosize {
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	margin-right: 5px;
+}
+
+
+.profilephotosize {
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	/* margin-right: 8px; */
+	position: absolute;
+	left: -5px;
+	/* padding-right: 10px; */
+	top: 15px;
+}
+
+
+/*
+==================================================================
+==================================================================
+    SETTINGS PAGE  CSS STYLING HERE
+==================================================================
+==================================================================
+*/
+
+
+.settingspagesingelinfo{}
+
+.changepassord a,
+.settingspagesingelinfo a {
+	color: #20B251;
+	font-weight: 600;
+	display: inline-block;
+	margin-top: 3px;
+	text-decoration: ;
+}
+
+
+.settingsprofilepicture img{
+    width:100px;
+    height:100px;
+    margin:10px 0px;
+}
+
+
+.changepassord{}
+.changepassord a{
+    margin-top:10px;
+}
+
+
+
+/*
+==================================================================
+==================================================================
+    BROWSE FREELANCERS PAGE  CSS STYLING HERE
+==================================================================
+==================================================================
+*/
+
+
+
+.signeFreelancerSec {
+	display: flex;
+	margin: 15px 0px;
+    flex-wrap: wrap;
+}
+.singlefreeleftside{
+    width:70%;
+}
+
+.singfravatar{
+    display: flex;
+}
+.singfravatar a img{
+    width:60px;
+    height: 60px;
+    margin-right:20px;
+    border-radius: 5px;
+}
+.singfravatar h6{
+    margin-bottom: 0px;
+}
+.singfravatar h6 a{
+    color: #656161;
+    text-transform: capitalize;
+    display: block;
+}
+
+.singlefreereviews{}
+.singlefreereviews ul {
+	text-align: center;
+}
+.singlefreereviews ul li{
+    display: inline;
+}
+.singlefreereviews ul li a{
+    display: inline-block;
+    
+}
+.singlefreereviews ul li a i{
+    color: #ffd800;
+}
+
+.singlefreereviews h6 a{
+    color: #777;
+}
+
+
+.singleFreeSkills{}
+.singleFreeSkills ul{
+    text-align: center;
+    margin:10px 0px;
+}
+.singleFreeSkills ul li{
+    display: inline;
+}
+.singleFreeSkills ul li a {
+	display: inline-block;
+	border: 1px solid #ddd;
+	color: #5f5f5f;
+	padding: 3px 8px;
+	text-transform: capitalize;
+	background: #fff;
+	font-weight: 300;
+	margin-bottom: 5px;
+	font-size: 12px;
+}
+.singleFreeSkills ul li a:hover{
+    border-color: #20b251;
+    text-decoration: underline;
+}
+
+
+.singlefreecontactus {
+    text-align: right;
+}
+.sfrcbutton{
+    display: flex;
+}
+.sfrcbutton a{
+    
+    color: #fff;
+    display: inline-block;
+    padding: 8px 20px;
+    text-transform: capitalize;
+    border:2px solid transparent;
+    flex: 1;
+}
+
+.sfrcbutton a:hover{
+    background: #fff;
+    color: #20B251;
+    border:2px solid #20B251;
+}
+
+
+.contactbusfr{
+    background: #20B251;
+    border-right:2px solid #ddd;
+}
+.vieportfolio{
+    background: #888;
+}
+
+
+
+.singleFreelancerpro{
+    text-align: center;
+    border: 1px solid #ddd;
+	background: #fff;
+    padding: 15px;
+    margin-right: 10px;
+    flex-grow: 1;
+    width: calc(100% * (1/3) - 10px - 1px);
+    margin-bottom: 10px;
+}
+.singleFreelancerpro a img {
+	margin: 0px auto;
+	border-radius: 100%;
+	width: 30%;
+	text-align: center;
+}
+
+
+
+
+.singleFreelancerpro span.sflocation{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.singleFreelancerpro span.sflocation i{
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+==================================================================
+==================================================================
+            PLACE BID PAGE  CSS STYLING HERE
+==================================================================
+==================================================================
+*/
+
+
+.mainplacebidarea{
+    padding: 20px;
+    background:#fff;
+    border: 1px solid #ddd;
+    margin-top:5px;
+}
+
+.singlepdtitle h3{
+    margin-top:0px;
+}
+
+.mainplacebidarea form{}
+.placebidarea {
+	display: flex;
+	align-items: center;
+}
+
+.placebidarea h6{
+   margin:0px 0px 15px;
+    color: #847373;
+}
+
+.placebidinputarea span{
+    font-size: 16px;
+    color: #333;
+}
+
+.placebidLabelarea{
+    width:20%;
+}
+.placebidinputarea{
+    width:60%;
+}
+
+.deliverinputbox{
+    width:50%;
+}
+
+.placebidinputarea input {
+	box-shadow: none !important;
+	outline: none !important;
+}
+
+.placebidinputarea textarea{
+    width:100%;
+    height: 200px;
+    border: 1px solid #ddd;
+    box-shadow: none;
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+.bidbuttonarea{}
+.bidbuttonarea input[type="submit"] {
+	background: #20B251;
+	color: #fff;
+	padding: 10px 50px;
+	font-size: 16px;
+	font-weight: 600;
+	border: 2px solid transparent;
+	margin-top: 20px;
+    cursor: pointer;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;    
+}
+
+.bidbuttonarea input[type="submit"]:hover{
+    border:2px solid #20B251;
+    color: #20B251;
+    background: none;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;    
+    
+}
+
+
+/*
+==================================================================
+==================================================================
+            MY PROJECTS PAGE  CSS STYLING HERE
+==================================================================
+==================================================================
+*/
+
+
+
+.myprojectmainarea{}
+.myprotitle{
+    text-align: left;
+}
+
+.myprotitle h2{
+    margin-top:0px;
+}
+
+.myprotitle a{
+    border: 2px solid #20B251;
+    color: #20B251;
+    text-transform: capitalize;
+    padding:10px 20px;
+    margin-right:10px;
+    display: inline-block;
+    background: #fff;
+}
+.myprotitle a.currentitembid{
+    border: 2px solid #20B251;
+    color: #fff;
+    background: #20B251;
+}
+
+
+.myprojecaltileopenpro{
+    display: flex;
+    background: #20B251;
+    padding: 15px 20px;
+    margin-top:30px;
+}
+.myprsinglttile{
+    flex:1;
+    text-align: center;
+}
+.myprsinglttile h5{
+    color: #fff;
+    text-transform: uppercase;
+    margin:0px;
+    font-size: 16px;
+    
+}
+
+
+
+.myallopenprodetails {
+	display: flex;
+	background: #fff;
+	padding: 20px 20px;
+	border: 1px solid #ddd;
+}
+.myallprtitle{
+    flex:1;
+    text-align: center;
+}
+.myallprtitle a{
+    color: #777;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.myallprtitle a:hover{
+    color: #20b251;
+}
+
+.myallprtitle span{
+    font-weight: 600;
+}
+
+.myprsinglttileone,
+.myallprtitleone{
+    text-align: left;
+}
+.myallprtitleone a{
+    color: #20b251;
+    font-weight:500;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+
+.myallprtitle a i{
+    font-size: 20px;
+}
+
+
+/*
+==================================================================
+==================================================================
+            AWARDED PROJECTS PAGE  CSS STYLING HERE
+==================================================================
+==================================================================
+*/
+
+
+.awardedProjectarea{}
+
+.awardedProjleftside{
+    padding: 10px;
+    background: #fff;
+}
+.awaredeprotitle{
+    text-align: left;
+}
+.awaredeprotitle h2{
+    margin:0px;
+    
+}
+.awardedprallinfo {
+	display: flex;
+	border: 1px solid #ddd;
+	margin: 20px 0px 30px;
+	padding: 30px 20px;
+}
+.awardedsiinfo {
+	flex: 1;
+	text-align: center;
+	border-right: 1px solid #ddd;
+	padding: 20px 0px;
+}
+
+.awardedsiinfo:last-child{
+    border-right: none;
+}
+
+.awardedsiinfo a {
+	color: #20b251;
+	display: block;
+	font-weight: 700;
+	font-size: 42px;
+	margin-bottom: 15px;
+}
+.awardedsiinfo span{
+    display: block;
+    text-transform: capitalize;
+}
+
+
+
+
+.awardedProcstausmain{
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.awardedProcstaus {
+	display: flex;
+	background: #20b251;
+	padding: 10px;
+    margin-bottom: 20px;
+}
+.awardedorcrstautitle{
+    flex: 1;
+    text-align: center;
+}
+.awardedorcrstautitle a{
+    text-transform: uppercase;
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.awardedorcrstautitle a:hover{
+    text-decoration: underline;
+}
+
+.awardedorcrestDescri{}
+.awardedorcrestDescri p{
+    color: #20b251;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+
+.awardedorcrestDescrinboxin {
+	display: flex;
+	padding: 10px 20px;
+	border-bottom: 1px solid #ddd;
+}
+
+.messagerecipent{
+    flex: 1;
+}
+.awardedorcrstautitle{
+    flex: 1;
+}
+.messagerecipent a{
+    display: inline-block;
+    color: #20b251;
+}
+
+.messagerecipent a:first-child{
+    color:#333;
+    display: block;
+}
+
+.awardedorcrstautitle p{
+    text-align: center;
+}
+
+
+
+.awardedorcrestDescritwo {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 20px;
+}
+.awardedorcrestDescritwo .pending{
+    color: #888;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.awardedorcrestDescritwo .orderavpro{}
+.awardedorcrestDescritwo .orderavpro a{
+    color: #20b251;
+    text-transform: capitalize;
+}
+.awardedorcrestDescritwo .completed{
+    color: #20b251;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+
+
+
+
+
+/*
+=================================
+    AWARDED SIDE BAR CSS 
+=================================
+*/
+
+.awardedSidebar {
+	background: #fff;
+	padding: 10px;
+	border: 1px solid #ddd;
+	-webkit-box-shadow: 0px 4px 5px -4px #888;
+	-moz-box-shadow: 0px 4px 5px -4px #888;
+	-ms-box-shadow: 0px 4px 5px -4px #888;
+	-o-box-shadow: 0px 4px 5px -4px #888;
+	box-shadow: 0px 4px 5px -4px #888;
+}
+.awardesidepostajob{
+    text-align: left;
+}
+.awardesidepostajob a {
+	background: #20b251;
+	color: #fff;
+	padding: 15px 40px;
+	/* border-radius: 3px; */
+	display: block;
+	font-weight: 600;
+	text-align: center;
+	font-size: 18px;
+}
+
+.awardedemenulist{}
+.awardedemenulist h4{
+    margin-bottom: 0px;
+}
+.awardedemenulist ul{}
+.awardedemenulist ul li{
+    display: block;
+    margin-bottom: 3px;
+}
+.awardedemenulist ul li a{
+    display: inline-block;
+    color: #777;
+    text-transform: capitalize;
+}
+.awardedemenulist ul li a:hover{
+    text-decoration: underline;
+}
+
+
+.awardedemenulist {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 15px;
+}
+.awardedemenulist:last-child{
+	border-bottom: none;
+	padding-bottom:0px;
+}
+
+/*
+==================================================================
+==================================================================
+            VIEW PROPOSALS PAGE  CSS STYLING HERE
+==================================================================
+==================================================================
+*/
+
+.viewProposalarea {
+	display: flex;
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #ddd;
+	margin-top: 10px;
+}
+.viewproleftsidebare{
+    display: flex;
+    width:70%;
+}
+
+.viewpromainavataer{
+    margin-right:15px;
+    width:15%;
+}
+
+.viewproleftsidebare a.viewproavatar {
+}
+.viewproleftsidebare a img{
+
+}
+
+.viewpropsaltitledesc {
+	padding-right: 20px;
+    width:80%;
+}
+.viewpropsaltitledesc a.viewprotitle{
+  display: inline-block;
+	color: #333;
+	font-weight: 600;
+    margin-bottom: 10px;
+
+}
+.viewpropsaltitledesc p{}
+.viewpropsaltitledesc span{}
+.viewpropsaltitledesc a.award-project-bt {
+	color: #fff;
+	background: #20b251;
+	border: none;
+	padding: 15px 30px;
+	display: inline-block;
+	margin-top: 15px;
+	cursor: pointer;
+	width: auto;
+}
+
+.viewpropsaltitledesc button:hover{
+	background: #0b9339;
+    
+}
+
+
+.viewprorightsidearea {
+	width: 30%;
+	text-align: center;
+	border-left: 1px solid #ddd;
+	padding-top: 30px;
+}
+.viewprorightsidearea span {
+	font-size: 20px;
+	display: block;
+	margin-bottom: 10px;
+}
+.viewprorightsidearea ul{}
+.viewprorightsidearea ul li{
+    display: inline;
+}
+.viewprorightsidearea ul li a{
+    display: inline-block;
+    color: #ffd800;
+}
+.viewprorightsidearea p {
+	font-weight: 600;
+	margin-top: 5px;
+	text-transform: capitalize;
+}
+
+
+
+.maybalanceamount {
+	border: 1px solid #ddd;
+	margin: 15px 0px;
+	padding: 10px;
+}
+
+.maybalanceamount h3{
+    margin: 0px;
+}
+
+.awardedorcrestDescri p a{
+    text-decoration: underline!important;
+    color: #20b251;
+}
+
+
+
+.award-project-bt{}
+
+.awardedprojecttosome{
+    background: #fff;
+    padding: 20px;
+}
+.awardedprojecttosome h2{
+    color: #20b251;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/*
+==================================================================
+==================================================================
+MEMBERSHIP, MY BIDS, MEMBERSHIP PAYMENTS, MY SKILLS, AND OTHERS
+
+PAGE  CSS STYLING HERE
+==================================================================
+==================================================================
+*/
+
+
+
+.membershiptitle{
+    
+}
+
+.singleMembershipbox {
+	text-align: center;
+	border: 1px solid #ddd;
+	background: #fff;
+	padding: 30px;
+	-webkit-box-shadow: 0px 1px 3px -4px #777;
+	-moz-box-shadow: 0px 1px 3px -4px #777;
+	-ms-box-shadow: 0px 1px 3px -4px #777;
+	-o-box-shadow: 0px 1px 3px -4px #777;
+	box-shadow: 0px 1px 3px -4px #777;
+}
+
+
+.singleMembershipbox:hover{
+	-webkit-box-shadow: 0px 2px 5px -4px #777;
+	-moz-box-shadow: 0px 2px 5px -4px #777;
+	-ms-box-shadow: 0px 2px 5px -4px #777;
+	-o-box-shadow: 0px 2px 5px -4px #777;
+	box-shadow: 0px 2px 5px -4px #777;
+    border-color:#20b251;
+}
+
+.mtabltitle {
+	color: #20b251;
+	font-weight: 600;
+	font-size: 24px;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+    text-align: center;
+}
+.mtableprice {
+	color: #333;
+	font-weight: 700;
+	font-size: 42px;
+	margin: 35px 0px 25px;
+	text-align: center;
+}
+
+.mtableprice sup {
+	font-size: 16px;
+	top: -20px;
+}
+.singleMembership small {
+	font-size: 13px;
+	text-transform: capitalize;
+	font-weight: 400;
+	margin-top: 13px;
+	display: block;
+    color: #333;
+    text-align: center;
+    margin: 15px auto;
+}
+.singleMembutton {
+	text-align: center;
+}
+
+.currentplan {
+	display: inline-block;
+	background: #fff;
+	color: #20b251;
+	padding: 10px 20px;
+	margin: 30px 0px 40px;
+	text-transform: capitalize;
+	border: 2px solid #20b251;
+    width:100%;
+}
+.othersplan {
+	display: inline-block;
+	background: #20b251;
+	color: #fff;
+	padding: 10px 20px;
+	margin: 30px 0px 37px;
+	text-transform: capitalize;
+	border: 2px solid #20b251;
+	width: 100%;
+}
+.singleMembutton a.currentplan:hover{
+    color: #20b251;
+}
+
+.singleMembutton a.othersplan:hover{
+    color: #20b251;
+    border: 2px solid #20b251;
+    background: #fff;
+}
+.singmbidtitle {
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 500;
+}
+
+
+
+
+.allmembershiptablesare{
+    display: flex;
+    background: #fff;
+}
+.singleMembership {
+	flex: 1;
+	background: #fff;
+	border:1px solid #ddd;
+	padding: 20px;
+}
+
+.singleMembership:last-child{
+    border: none;
+}
+
+
+.singmbidtitle ul{}
+.singmbidtitle ul li{
+    font-size: 14px;
+    color: #1f2836;
+}
+.singmbidtitle ul li strong{}
+
+
+.singleMembershipplus{
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    border-color:#20b251;
+    background: #20b251;
+    color: #fff;
+}
+
+
+.singleMembershipplus .mtabltitle{
+    color: #333;
+}
+.singleMembershipplus .mtableprice{
+    color: #fff;
+}
+
+
+.singleMembershipplus .othersplan{
+    border:2px solid #fff;
+}
+.singleMembershipplus .singmbidtitle ul li{
+    color: #f5f5f5;
+}
+
+.faqmembershiparea {
+	padding: 20px;
+	background: #fff;
+	margin-top: 50px;
+}
+.faqtitlemem{}
+.faqtitlemem h2{
+    margin-bottom: 20px;
+}
+.singlefaqmember{
+    margin-bottom: 30px;
+}
+.singlefaqmember h5{}
+.singlefaqmember p{
+    border-left:2px solid #ddd;
+    padding-left:5px;
+    margin-left:30px;
+}
+.singlefaqmember p a{}
+
+
+.membershiptitle h2{
+    margin-top:0px;
+}
+
+
+
+
+.inboxMessageallinfo{
+    display: flex;
+    margin:15px 0px;
+}
+.inboxmeleftside{
+    width: 70%;
+    text-align: left;
+    padding-left:10px;
+}
+
+.inboxmeleftside a{
+    display: inline-block;
+    border: 1px solid #20b251;
+    color: #20b251;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    margin-right: 5px;
+}
+
+
+.inboxmeleftside a.currmessage{
+    background: #20b251;
+    color: #fff;
+}
+
+.inboxmerightside{
+    width:30%;
+    text-align: right;
+}
+
+
+.paginationListmybid{
+    background: #fff;
+    text-align: center;
+}
+
+
+.selectallskillsarea{
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #fff;
+}
+.selectallskillsarea h4{}
+.selectallskillsarea select:focus{
+    outline: none;
+}
+.selectallskillsarea select{
+    outline: none!important;
+    box-shadow: none!important;
+    margin-bottom: 15px;
+}
+
+.myskilltitle{
+    background: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.upgradeskilllink{}
+.upgradeskilllink a{
+    color: #20b251;
+    font-weight: 600;
+    display: inline-block;
+    margin:10px 0px 15px;
+}
+.selectallskillsarea input[type="submit"] {
+	background: #20b251;
+	color: #fff;
+	text-transform: capitalize;
+	padding: 15px 60px;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+
+
+/*
+===================================================================================
+===================================================================================
+                PRIVACY POLICY PAGE CSS DESIGN
+===================================================================================
+===================================================================================
+*/
+
+.privacypolicypage{
+  
+}
+.privacyPolicyInner{
+      background: #fff;
+    padding: 20px;
+}
+.privacyPolicyInner h2{}
+.privacyPolicyInner h6{}
+.privacyPolicyInner p{}
+.privacyPolicyInner ul{}
+.privacyPolicyInner ul li {
+	display: block;
+	font-weight: 600;
+	line-height: 28px;
+}
+
+.privacyPolicyInner .privacydatalist{
+    padding-left:30px;
+}
+.privacyPolicyInner .privacydatalist li{
+    font-weight: 400;
+    list-style-type: disc;
+    display: list-item;
+}
+
+.technicaldatalist{
+    padding-left: 30px;
+
+}
+
+
+
+.privacytablesarea{
+    padding: 20px;
+}
+.privacytablesarea .table{
+    border: 1px solid #ddd;
+}
+.privacytablesarea .table tr{
+    
+}
+.privacytablesarea .table tr th{
+    font-weight: 600;
+       border:1px solid #ddd;
+}
+.privacytablesarea .table tr td{
+    border:1px solid #ddd;
+}
+.privacytablesarea .table tr td ul{}
+.privacytablesarea .table tr td ul li{
+    display: block;
+    font-weight: 400;
+}
+
+
+
+
+.privacylistnew .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.privacylistnew .active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.privacylistnew .active:after {
+    content: "\2212";
+}
+
+.privacylistnew .panel {
+    padding: 0px 20px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    
+}
+
+.privacylistnew .panel p a{
+    color: #20b251;
+}
+
+
+
+.privacfmmeleftpa {
+	padding-left: 10px;
+	border-left: 1px solid #ddd;
+	margin-left: 20px;
+}
+.personallistarea{}
+.personallistarea ul{
+    padding-left:30px;
+    list-style-type: circle;
+}
+.personallistarea ul li{
+    display: block;
+    margin-bottom: 6px;
+}
+
+
+
+.formargintoppanel{
+    margin-top:20px;
+}
+
+
+
+
+
+
+
+
+/*
+===================================================================================
+===================================================================================
+                BROWSE JOBS PAGE CSS DESIGN
+===================================================================================
+===================================================================================
+*/
+
+.jobspagefilter {
+	justify-content: space-between;
+	margin-bottom: 20px;
+	margin: 0px 10px 20px 0px;
+}
+
+/* Create two equal columns that floats next to each other */
+.singlerowjobs .column {
+	float: left;
+	width: 48%;
+	padding: 20px;
+	border: 1px solid #ddd;
+	background: #fff;
+	margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.singlerowjobs .column:nth-child(even){
+    margin-right: 0px!important;
+    width:50%;
+}
+
+
+/* Clear floats after the columns */
+.singlerowjobs:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 5px 12px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.btn:hover {
+    background-color: #ddd;
+    box-shadow: none;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+    box-shadow: none;
+}
+
+.gridviewmargin{
+    margin-top:20px;
+    text-align: left;
+}
+
+
+/*
+===================================================================================
+===================================================================================
+              CONVERSATIOIN PAGE CSS DESIGN
+===================================================================================
+===================================================================================
+*/
+
+
+
+.conversattintile{
+    background: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+.conversattintile h2 {
+	margin: 0px;
+	text-align: left;
+	font-size: 32px;
+}
+.conversattintile h2 a{
+    color: #20b251;
+}
+
+
+
+.conversationmessboxx{
+    background: #fff;
+   
+}
+.conversationmessboxx form{}
+.conversationmessboxx form textarea {
+	width: 100%;
+	border: 1px solid #ddd;
+	padding: 10px;
+	margin-bottom: 15px;
+	height: 200px;
+}
+.conversationmessboxx form input {
+	background: #20b251;
+	border: none;
+	color: #fff;
+	padding: 10px 30px;
+	text-transform: capitalize;
+    cursor: pointer;
+}
+
+
+.conversationmainarea{
+    background: #fff;
+    padding: 20px;
+}
+
+.hidefrominbox{
+    margin-bottom: 20px;}
+.hidefrominbox a {
+	color: #20b251;
+	font-size: 20px;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.hidefrominbox p{
+    font-weight: 600;
+}
+.singleConversationbuyer{
+    display: flex;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.singleConversationfre{
+    display: flex;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #f1f1f1;
+    
+}
+
+.singleconleft{
+    flex: 1;
+}
+.singleconleft a img{
+       width: 30%;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+.singleconleft p{
+    margin: 0px;
+}
+
+.singleconleft a{
+    color: #20b251;
+}
+
+.singlecoright{
+    text-align: right;
+    flex: 1;
+}
+
+.singlecoright a{
+    color: #20b251;
+    text-transform: capitalize;
+}
+
+
+.confilearea{
+    margin-top:20px;
+}
+
+.custom-file-label {
+	border: 1px solid #20b251;
+}
+.custom-file-label::after {
+	content: "Browse";
+	background-color: #20b251;
+	border-left: 1px solid #20b251;
+	border-radius:0px;
+    color: #fff;
+}
+
+
+
+/*
+===================================================================================
+===================================================================================
+              REVENUE PAGE CSS DESIGN
+===================================================================================
+===================================================================================
+*/
+
+
+
+.revenuearea .awardedsiinfo{}
+.revenuearea .awardedsiinfo a{}
+.revenuearea .awardedsiinfo span{
+    font-weight: 600;
+    color: #777;
+    display: block;
+    margin:10px 0px;
+}
+.revenuearea .awardedsiinfo p{}
+
+.yourearninga{
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+.yourearninga h5{
+    text-transform: capitalize;
+    color: #777;
+    margin:0px;
+}
+.yourearninga h5 span{
+    color: #20b251;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+===================================================================================
+===================================================================================
+              FREELANCER PROFILE CSS DESIGN
+===================================================================================
+===================================================================================
+*/
+
+
+.freelancerprofilearea{}
+.freelancerproleftside{
+    background: #fff;
+    padding: 20px;
+}
+.freeprotoparea{
+    display: flex;
+}
+.freeprotoparea{}
+.freeprotoparea figure{}
+.freeprotoparea figure img {
+	width: 100px;
+	height: 100px;
+	line-height: 100%;
+	border-radius: 100%;
+	margin-right: 20px;
+}
+
+.freetoptitledes{}
+.recentreviewfreepro h2 {
+	margin-top: 0px;
+	margin-bottom: 40px;
+	color: #20b251;
+}
+.freetoptitledes h4 {
+	margin-bottom: 10px;
+	color: #20b251;
+	margin-top: 8px;
+}
+.freetoptitledes ul{
+    text-align: left;
+}
+.freetoptitledes ul li{
+    display: inline;
+}
+.freetoptitledes ul li a {
+	display: inline-block;
+	text-transform: capitalize;
+	color: #777;
+	border: 1px solid #ddd;
+	padding: 3px 6px;
+	margin-right: 5px;
+	font-size: 12px;
+}
+.freetoptitledes ul li a:hover{
+    background: #f8f8f8;
+}
+
+
+.overviewinfo{}
+
+
+.freelancerprsidebar{
+    background: #fff;
+    padding: 20px;
+}
+.contactinfo{}
+.contactinfo a {
+	display: inline-block;
+	background: #20b251;
+	color: #fff;
+	padding: 10px 30px;
+	text-align: center;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+}
+.contactinfo span {
+	display: block;
+	font-weight: 700;
+	font-size: 20px;
+	margin: 10px 0px 15px;
+}
+.contactinfo p {
+	text-transform: capitalize;
+	margin: 0px;
+	line-height: 25px;
+}
+.contactinfo p i{
+    color: #20b251;
+    margin-right: 6px;
+}
+.contactinfo ul{
+    text-align: left;
+    padding-top: 20px;
+}
+
+.buyerreviewslist ul li,
+.contactinfo ul li{
+    display: inline-block;
+}
+
+.buyerreviewslist ul li i,
+.contactinfo ul li i{
+    color: #ffd800;
+}
+
+
+
+
+.recentreviewfreepro{
+    padding: 20px;
+    background: #fff;
+}
+
+.recentreviewfreepro h2{
+    margin-top:0px;
+}
+
+.singlerecenreviewsfr {
+	margin-bottom: 40px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 40px;
+}
+
+.singlerecenreviewsfr:last-child{
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+
+.singlerecenreviewsfr h5{
+    margin-bottom:5px;
+}
+.singlerecenreviewsfr img {
+	width: 64px;
+	height: 64px;
+	border-radius: 5px;
+}
+
+.singlerecenreviewsfr p{
+    margin-top:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

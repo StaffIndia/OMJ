@@ -10,6 +10,8 @@ if($this->session->userdata('user_type')) {
 
 }
 
+
+
 ?> 
 
      <header class="sticky-top">
@@ -60,7 +62,16 @@ if($this->session->userdata('user_type')) {
                                     
                                  <?php   if(($userType=="work") || ($userType=="hire")){ ?>
                                     
-                                    <li class="afloginnaven afloginnavenfirst"><a href="<?=base_url()?>inbox_message"><i class="icofont icofont-envelope"></i><sap>5</sap></a></li>
+                                    <li class="afloginnaven afloginnavenfirst"><a href="<?=base_url()?>inbox_message"><i class="icofont icofont-envelope"></i><sap>
+                                        <?php
+
+                                        if( $this->session->userdata('unreadMsg')){
+
+                                            echo  $this->session->userdata('unreadMsg');
+
+                                        }
+                                         ?>
+                                    </sap></a></li>
                                     <li class="notificationlistmain afloginnaven"><a class="notificationbell innavpaddingless" ><i class="icofont icofont-bell-alt"></i></a>
                                     
                                     

@@ -58,7 +58,8 @@
 									
 									<?php 
 									
-										echo date('M d, Y  h:i:s ',$row['mtime']);
+                                    echo date('M d, Y  h:i:s ',$row['mtime']);
+                                   // echo $row['mtime'];
 								
 									?>
 									

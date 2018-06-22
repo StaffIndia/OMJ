@@ -69,6 +69,8 @@ if($this->session->userdata('user_type')) {
 
                                             echo  $this->session->userdata('unreadMsg');
 
+                                        }else {
+                                            echo '0';
                                         }
                                          ?>
                                     </sap></a></li>

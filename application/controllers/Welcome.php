@@ -22,14 +22,31 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->model('home');
 		$this->load->model('Skill');
+		$this->load->model('Model_Inbox');
 		$data['categories']=$this->home->get_categories_home();
 		$data['scriptolutionprojects']=$this->home->get_jobs();
 		$skill['skillscriptolution']=$this->Skill->get_all_skills();
 		$data['scriptolutionprojectbids']=$this->home->get_bids();
+    
+		if($this->session->userdata('userid')){
+			$Userid =  $this->session->userdata('userid');
+
+			$count = $this->Model_Inbox->getUnreadMsgCount();
+
+			$this->session->set_userdata('unreadMsg',$count);
+		}
+
+		//echo $this->session->userdata('unreadMsg');
+
+		//var_dump( $sql);
 		
 		
 		$this->load->view('inc/header');
+
 		$this->load->view('inc/navbar');
+
+
+
 		$this->load->view('home',$data);
 		$this->load->view('inc/footer_top', $skill);
 		$this->load->view('inc/footer');

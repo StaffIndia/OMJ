@@ -24,6 +24,21 @@ class Model_Inbox extends CI_Model{
         
         
     }
+
+    
+    public function getUnreadMsgCount(){
+      $userid=$this->session->userdata('userid');
+      $this->db->select('*');
+      $this->db->from('inbox');
+      $this->db->where('MSGTO = '.$userid.' AND unread = 0');
+      $Msgcount = $this->db->count_all_results();
+      //$query=$query->result_array();  
+      return $Msgcount; 
+
+    }
+
+
+  
 //    public function message($id){
 //       // $sdata['id']=$id;
 //      $id=2;

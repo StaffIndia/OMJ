@@ -69,7 +69,7 @@ class Conversation extends CI_Controller {
 					 $config['first_tag_open'] = '<li>';
 					 $config['first_tag_close'] = '</li>';
 					 $config['next_link'] = 'Next >';
-					 $config['prev_link'] = '< Prev';
+					$config['prev_link'] = '< Prev';
 					
 					$this->pagination->initialize($config);
 						
@@ -145,9 +145,7 @@ class Conversation extends CI_Controller {
 					 
 						$msg2=' <div class="alert alert-success">Message Sent</div>';
 						 $this->session->set_flashdata('message',$msg2 );
-					   redirect('conversation/user/'.$id.'');
-					
-                        
+					   redirect('conversation/user/'.$id.'');  
                 }
 	
 	}

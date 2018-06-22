@@ -7,7 +7,10 @@
                       <div class="conversationmainarea">
                         <div class="awardedProjleftside">
                             <div class="allcattitle conversattintile">
-                                <h2>Conversation with <a  href="">derekstaffinida</a></h2>
+
+                            
+                            
+                                <h2>Conversation with <a  href=""><?php echo(str_replace("%20"," ",$name)); ?></a></h2>
                             </div><!--end my pro title-->
 							
 							<?php  

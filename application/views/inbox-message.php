@@ -51,19 +51,21 @@
 								 <?php foreach($result as $row){  if($row['MSGTO']==$this->session->userdata('userid')){}else{?>
 								  <div class="col-md-6"> 
 								  
-									<p><a href="<?=base_url()?>conversation/user/<?=$row['MSGTO']?>"><?=$row['fullname']?></a></p>
+									<p>
+                                        <a href="<?=base_url()?>conversation/user/<?=$row['MSGTO']?>/<?=$row['fullname']?>">
+                                            <?=$row['fullname']?>
+                                        </a>
+                                    </p>
 								  </div>
 								  
 								  <div class="col-md-6"> 
 								  
-									<p> &nbsp </p>
+									<p> &nbsp; </p>
 								  </div>
 								  
 								   <?php }
 									}								  
  ?>
-								  
-								
 
 								  </div>
 							  </div>

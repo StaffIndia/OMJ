@@ -14,12 +14,12 @@ class Inbox_message extends CI_Controller {
 						 $id=$this->session->userdata('userid');
 	
 						$sql=" SELECT * FROM ((SELECT DISTINCT(MSGTO) FROM inbox WHERE MSGTO='".$id."' OR MSGFROM='".$id."') UNION (SELECT DISTINCT(MSGFROM) FROM inbox WHERE MSGTO='".$id."' OR MSGFROM='".$id."')) AS A JOIN members ON A.MSGTO=members.USERID  ";
-							
-						$query=$this->db->query($sql);
-						$data['result']=$query->result_array();
 						
-	
-	                   
+						$query=$this->db->query($sql);
+
+						
+						$data['result']=$query->result_array();
+
                         $this->load->view('inc/header');
 						$this->load->view('inc/navbar');
                         // $data['res']=$this->Model_Inbox->allMessage(); 

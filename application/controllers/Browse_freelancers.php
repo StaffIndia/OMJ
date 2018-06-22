@@ -135,7 +135,7 @@ class Browse_freelancers extends CI_Controller {
 		
 		$config['suffix']="?". http_build_query($_GET, '', "&");
 		$config['base_url'] = site_url('browse_freelancers/index');
-		$config['total_rows'] = $this->db->get('members')->num_rows();;
+		$config['total_rows'] = $this->db->get('members')->num_rows();
 		$config['per_page'] = 6;
 		$config['num_links'] = 5;
 		$config['full_tag_open'] = '<ul class="">';

@@ -5,17 +5,105 @@ class Project extends CI_Controller {
 
 
 	public function index()
-	{
-	
-		$query=$this->db->select('*')->from('scriptolutionprojects')->join('members', 'scriptolutionprojects.USERID = members.USERID')->get();
+	{	
+
+		$this->load->library('pagination');
+
+		if(!empty($_GET['title'])){
+		
+		$query=$this->db->LIKE('scriptolutionfreelancertitle',$_GET['title'],'both');
+		$query=$this->db->select('*')->from('scriptolutionprojects')->join('members', 'scriptolutionprojects.USERID = members.USERID')->where('active !=6')->order_by('PID', 'asc')->get();
+
 		$data['result']=$query->result_array();
 
-		$this->load->view('inc/header');
-		$this->load->view('inc/navbar');
+		$config['suffix']="?". http_build_query($_GET, '', "&");
+		$config['base_url'] = site_url('Project/index/');
+        $config['total_rows'] = $this->db->get('scriptolutionprojects')->num_rows();
+        $config['per_page'] =  10;
+        $config['num_links'] = 3;
+        $config['full_tag_open'] = '<ul class="pagination no-margin">';
+        $config['full_tag_close'] = '</ul>';
+        $config['cur_tag_open'] = '<li class="active"><a href="">';
+        $config['cur_tag_close'] = '</a></li>';
+        $config['prev_tag_open'] = '<li>';
+        $config['prev_tag_close'] = '</li>';
+        $config['next_tag_open'] = '<li>';
+        $config['next_tag_close'] = '</li>';
+        $config['num_tag_open'] = '<li>';
+        $config['num_tag_close'] = '</li>';
+        $config['last_tag_open'] = '<li>';
+        $config['last_tag_close'] = '</li>';
+        $config['first_tag_open'] = '<li>';
+        $config['first_tag_close'] = '</li>';
+        $config['next_link'] = 'Next >';
+        $config['prev_link'] = '< Prev';
+
+        if ($this->uri->segment(3)) {
+            $data['segment'] = $this->uri->segment(3);
+        } else {
+            $data['segment'] = 0;
+        }
+
+        $this->pagination->initialize($config);
+
+
+        	$query = $this->db->limit($config['per_page'], $data['segment'])->select('*')->from('scriptolutionprojects')->join('members', 'scriptolutionprojects.USERID = members.USERID')->where('active !=6')->order_by('PID', 'asc')->LIKE('scriptolutionfreelancertitle',$_GET['title'],'both')->get();
+
+        	$data['result'] = $query->result_array();
+
+		$this->load->view('admin/admin_header');
 		$this->load->view('Project/index',$data);
-		$this->load->view('inc/footer');
-		
-		
+		$this->load->view('admin/admin_footer');
+	
+		}
+
+		else {
+
+			$query=$this->db->select('*')->from('scriptolutionprojects')->join('members', 'scriptolutionprojects.USERID = members.USERID')->where('active !=6')->order_by('PID', 'asc')->get();
+
+		$data['result']=$query->result_array();
+
+		$config['suffix']="?". http_build_query($_GET, '', "&");
+		$config['base_url'] = site_url('Project/index/');
+        $config['total_rows'] = $this->db->get('scriptolutionprojects')->num_rows();
+        $config['per_page'] =  10;
+        $config['num_links'] = 3;
+        $config['full_tag_open'] = '<ul class="pagination no-margin">';
+        $config['full_tag_close'] = '</ul>';
+        $config['cur_tag_open'] = '<li class="active"><a href="">';
+        $config['cur_tag_close'] = '</a></li>';
+        $config['prev_tag_open'] = '<li>';
+        $config['prev_tag_close'] = '</li>';
+        $config['next_tag_open'] = '<li>';
+        $config['next_tag_close'] = '</li>';
+        $config['num_tag_open'] = '<li>';
+        $config['num_tag_close'] = '</li>';
+        $config['last_tag_open'] = '<li>';
+        $config['last_tag_close'] = '</li>';
+        $config['first_tag_open'] = '<li>';
+        $config['first_tag_close'] = '</li>';
+        $config['next_link'] = 'Next >';
+        $config['prev_link'] = '< Prev';
+
+        if ($this->uri->segment(3)) {
+            $data['segment'] = $this->uri->segment(3);
+        } else {
+            $data['segment'] = 0;
+        }
+
+        $this->pagination->initialize($config);
+
+
+        	$query = $this->db->limit($config['per_page'], $data['segment'])->select('*')->from('scriptolutionprojects')->join('members', 'scriptolutionprojects.USERID = members.USERID')->where('active !=6')->order_by('PID', 'asc')->get();
+
+        	$data['result'] = $query->result_array();
+
+		$this->load->view('admin/admin_header');
+		$this->load->view('Project/index',$data);
+		$this->load->view('admin/admin_footer');
+		}
+	
+	
 	}
 
 
@@ -23,9 +111,6 @@ class Project extends CI_Controller {
 	{
 	
 
-	
-	
-	
 		$this->form_validation->set_rules('proname', 'Project name', 'required');
 		// $this->form_validation->set_rules('scriptolutionfreelancerskills', 'Skills', 'thisisnot');
 		$this->form_validation->set_rules('minbudget', 'Minimum budget', 'required|numeric');
@@ -257,7 +342,7 @@ public function edit($id)
 	 public function delete($id)
 	{
 		$data = array(
-               'active' =>3
+               'active' =>6
             );
 
 $this->db->where('PID', $id);

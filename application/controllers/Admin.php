@@ -12,9 +12,9 @@ class Admin extends CI_Controller{
         
         
         if($this->form_validation->run()==FALSE){
-           $this->load->view('inc/admin_header');
+           $this->load->view('admin/admin_header');
            $this->load->view('view_adminsign');
-           $this->load->view('inc/admin_footer');
+           $this->load->view('admin/admin_footer');
         }else{
             $data['un']=$this->input->post('un');
             $data['pass']=$this->input->post('pass');

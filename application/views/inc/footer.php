@@ -16,15 +16,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 
                 <div class="col-sm-6 col-md-3">
                     <div class="singleFoterlistarea">
-                        <h4>our company</h4>
+                        <h4>About</h4>
                         <ul>
-                            <li><a href="">about us</a></li>
-                            <li><a href="">careers</a></li>
-                            <li><a href="">our team</a></li>
-                            <li><a href="">Terms of Service</a></li>
-                            <li><a href=""> Privacy Policy</a></li>
-                            <li><a href="">Advertising</a></li>
-                            <li><a href="referel.html">Refer a Friend</a></li>
+                           
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Blog</a></li>
+                             <li><a href="">Contact us</a></li>
+                            <li><a href="">How it works</a></li>
+                            <li><a href="">Help Center </a></li>
+                            <li><a href="">Site Map</a></li>
                   
 
                         </ul>
@@ -33,23 +33,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 
                  <div class="col-sm-6 col-md-3">
                     <div class="singleFoterlistarea">
-                        <h4>help</h4>
+                        <h4>Browse</h4>
                         <ul>
-                            <li><a href="">how it works</a></li>
-                            <li><a href="">support</a></li>
-                            <li><a href="">trust & safety</a></li>
+                            <li><a href="">Freelancers by skill</a></li>
+                            <li><a href="">Categories</a></li>
+                            <li><a href="">Projects</a></li>
+                            <li><a href="">Freelancers</a></li>
+                            <li><a href="">Find Jobs</a></li>
+
                         </ul>
                     </div>
                 </div><!--end col3-->
                 
                 <div class="col-sm-6 col-md-3">
                     <div class="singleFoterlistarea">
-                        <h4>resources</h4>
+                        <h4>Terms</h4>
                         <ul>
-                            <li><a href="">Find local freelancers</a></li>
-                            <li><a href="">find tutorials</a></li>
-                            <li><a href="">stories</a></li>
-                            <li><a href="">hiring freelancers</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="">Terms and Condtion</a></li>
+                            <li><a href="">Copyright Policy</a></li>
+                            <li><a href="">Fees and Charges</a></li>
+
                         </ul>
                     </div>
                 </div><!--end col3-->
@@ -59,7 +63,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>  
         </div>
       </section>
-      <!--end banner sec-->  
       
       <footer>
         <div class="container">

@@ -71,19 +71,19 @@
                         <tr>
                           <td>
                                <div class="settingsinf">
-                                   <input type="text" placeholder="From">
-                                   <input type="text" placeholder="To">
+                                   <input type="text" name="from" placeholder="From">
+                                   <input type="text" name="to" placeholder="To">
                               </div>
                           </td>
                           <td>
                                <div class="settingsinf">
-                                   <input type="text" name="title" placeholder="Projects Title">
+                                   <input type="text" name="title" placeholder="Projects Title" value="<?=set_value('title');?>">
                               </div>
                           </td>
                           
                            <td>
                                <div class="settingsinf">
-                                   <input type="text" placeholder="Employer Name">
+                                   <input type="text" name="username"placeholder="Employer Name">
                               </div>
                           </td>
                           
@@ -91,7 +91,7 @@
                           
                           <td>
                                <div class="settingsinf">
-                                   <input type="checkbox" placeholder="">
+                                   <input type="checkbox" name="checkbox" placeholder="">
                               </div>
                           </td>
                           <td> </td>

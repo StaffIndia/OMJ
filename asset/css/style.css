@@ -2063,6 +2063,7 @@ footer{
 	display: flex;
 	justify-content: space-around;
 	margin-bottom: 20px;
+	align-items: center;
 }
 .awardedorcrestDescritwo .pending{
     color: #888;
@@ -2081,6 +2082,25 @@ footer{
 }
 
 
+.awaredchooseoption{}
+.awaredchooseoption ul{
+    text-align: center;
+}
+.awaredchooseoption ul li{
+    display: inline;
+}
+.awaredchooseoption ul li a{
+    display: inline-block;
+    color: #777!important;
+    font-size: 24px;
+}
+.awaredchooseoption ul li a i {
+	
+}
+.awaredchooseoption ul li.active a{
+    color: #20b251!important;
+}
+.awaredchooseoption ul li a:hover{}
 
 
 
@@ -2548,122 +2568,40 @@ PAGE  CSS STYLING HERE
       background: #fff;
     padding: 20px;
 }
-.privacyPolicyInner h2{}
-.privacyPolicyInner h6{}
-.privacyPolicyInner p{}
-.privacyPolicyInner ul{}
-.privacyPolicyInner ul li {
-	display: block;
-	font-weight: 600;
-	line-height: 28px;
-}
 
-.privacyPolicyInner .privacydatalist{
-    padding-left:30px;
-}
-.privacyPolicyInner .privacydatalist li{
-    font-weight: 400;
-    list-style-type: disc;
-    display: list-item;
-}
+.privacytitle{}
 
-.technicaldatalist{
-    padding-left: 30px;
-
+.privacytitle h2 {
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 30px;
+  
 }
-
-
-
-.privacytablesarea{
-    padding: 20px;
+.privacypolipara{}
+.privacypolipara p{}
+.privacypolicyinheading {
+	margin: 30px 0px;
 }
-.privacytablesarea .table{
-    border: 1px solid #ddd;
-}
-.privacytablesarea .table tr{
-    
-}
-.privacytablesarea .table tr th{
-    font-weight: 600;
-       border:1px solid #ddd;
-}
-.privacytablesarea .table tr td{
-    border:1px solid #ddd;
-}
-.privacytablesarea .table tr td ul{}
-.privacytablesarea .table tr td ul li{
-    display: block;
-    font-weight: 400;
-}
-
-
-
-
-.privacylistnew .accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-}
-
-.privacylistnew .active, .accordion:hover {
-    background-color: #ccc;
-}
-
-.accordion:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
-
-.privacylistnew .active:after {
-    content: "\2212";
-}
-
-.privacylistnew .panel {
-    padding: 0px 20px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    
-}
-
-.privacylistnew .panel p a{
+.privacypolicyinheading h4{
     color: #20b251;
 }
 
-
-
-.privacfmmeleftpa {
-	padding-left: 10px;
-	border-left: 1px solid #ddd;
-	margin-left: 20px;
+.privacypolipara h5{
+    color: #00928a;
+    font-style: italic;
+    font-size: 16px;
 }
-.personallistarea{}
-.personallistarea ul{
-    padding-left:30px;
-    list-style-type: circle;
+.privacypolipara ul {
+	padding-left: 30px;
 }
-.personallistarea ul li{
-    display: block;
-    margin-bottom: 6px;
+.privacypolipara ul li{
+    list-style: disc;
+    margin: 7px 0px;
 }
-
-
-
-.formargintoppanel{
-    margin-top:20px;
+.privacypolipara ul li strong{}
+.privacypolipara p a{
+    color: #20b251;
 }
-
 
 
 

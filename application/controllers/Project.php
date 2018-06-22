@@ -3,15 +3,44 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Project extends CI_Controller {
 
+	public function __construct(){
+		parent::__construct();
+		$this->load->library('form_validation');
+	}
+
 
 	public function index()
 	{	
 
-		$this->load->library('pagination');
+		$query=$this->load->library('pagination');
 
-		if(!empty($_GET['title'])){
+	if(!empty($_GET['title'])){
 		
 		$query=$this->db->LIKE('scriptolutionfreelancertitle',$_GET['title'],'both');
+	}
+
+	if(!empty($_GET['username'])){
+		
+		$query=$this->db->LIKE('username',$_GET['username'],'both');
+	}
+
+
+
+	if(!empty($_GET['from'])){
+		
+		$query=$this->db->where('scriptolutionprojects.PID >=', $_GET['from']);
+	}
+
+	if(!empty($_GET['to'])){
+		
+		$query=$this->db->where('scriptolutionprojects.PID <=', $_GET['to']);
+	}
+
+	if(!empty($_GET['checkbox'])){
+		
+		$query=$this->db->where('active', 1);
+	}
+
 		$query=$this->db->select('*')->from('scriptolutionprojects')->join('members', 'scriptolutionprojects.USERID = members.USERID')->where('active !=6')->order_by('PID', 'asc')->get();
 
 		$data['result']=$query->result_array();
@@ -46,53 +75,34 @@ class Project extends CI_Controller {
 
         $this->pagination->initialize($config);
 
+	if(!empty($_GET['title'])){
+		
+		$query=$this->db->LIKE('scriptolutionfreelancertitle',$_GET['title'],'both');
+	}
 
-        	$query = $this->db->limit($config['per_page'], $data['segment'])->select('*')->from('scriptolutionprojects')->join('members', 'scriptolutionprojects.USERID = members.USERID')->where('active !=6')->order_by('PID', 'asc')->LIKE('scriptolutionfreelancertitle',$_GET['title'],'both')->get();
+	if(!empty($_GET['username'])){
+		
+		$query=$this->db->LIKE('username',$_GET['username'],'both');
+	}
 
-        	$data['result'] = $query->result_array();
 
-		$this->load->view('admin/admin_header');
-		$this->load->view('Project/index',$data);
-		$this->load->view('admin/admin_footer');
-	
-		}
 
-		else {
 
-			$query=$this->db->select('*')->from('scriptolutionprojects')->join('members', 'scriptolutionprojects.USERID = members.USERID')->where('active !=6')->order_by('PID', 'asc')->get();
+		if(!empty($_GET['from'])){
+		
+		$query=$this->db->where('scriptolutionprojects.PID >=', $_GET['from']);
+	}
 
-		$data['result']=$query->result_array();
+	if(!empty($_GET['to'])){
+		
+		$query=$this->db->where('scriptolutionprojects.PID <=', $_GET['to']);
+	}
 
-		$config['suffix']="?". http_build_query($_GET, '', "&");
-		$config['base_url'] = site_url('Project/index/');
-        $config['total_rows'] = $this->db->get('scriptolutionprojects')->num_rows();
-        $config['per_page'] =  10;
-        $config['num_links'] = 3;
-        $config['full_tag_open'] = '<ul class="pagination no-margin">';
-        $config['full_tag_close'] = '</ul>';
-        $config['cur_tag_open'] = '<li class="active"><a href="">';
-        $config['cur_tag_close'] = '</a></li>';
-        $config['prev_tag_open'] = '<li>';
-        $config['prev_tag_close'] = '</li>';
-        $config['next_tag_open'] = '<li>';
-        $config['next_tag_close'] = '</li>';
-        $config['num_tag_open'] = '<li>';
-        $config['num_tag_close'] = '</li>';
-        $config['last_tag_open'] = '<li>';
-        $config['last_tag_close'] = '</li>';
-        $config['first_tag_open'] = '<li>';
-        $config['first_tag_close'] = '</li>';
-        $config['next_link'] = 'Next >';
-        $config['prev_link'] = '< Prev';
 
-        if ($this->uri->segment(3)) {
-            $data['segment'] = $this->uri->segment(3);
-        } else {
-            $data['segment'] = 0;
-        }
-
-        $this->pagination->initialize($config);
-
+		if(!empty($_GET['checkbox'])){
+		
+		$query=$this->db->where('active',1);
+	}
 
         	$query = $this->db->limit($config['per_page'], $data['segment'])->select('*')->from('scriptolutionprojects')->join('members', 'scriptolutionprojects.USERID = members.USERID')->where('active !=6')->order_by('PID', 'asc')->get();
 
@@ -101,10 +111,9 @@ class Project extends CI_Controller {
 		$this->load->view('admin/admin_header');
 		$this->load->view('Project/index',$data);
 		$this->load->view('admin/admin_footer');
+	
 		}
-	
-	
-	}
+
 
 
 	public function create()

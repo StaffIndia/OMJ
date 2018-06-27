@@ -15,6 +15,7 @@ class ip extends CI_Controller{
         
         if($this->form_validation->run()==FALSE){
             $this->load->view('inc/admin_header');
+            $this->load->view('inc/admin_sidebar');
             $this->load->view('view_addip');
             $this->load->view('inc/admin_footer');
             
@@ -30,6 +31,7 @@ class ip extends CI_Controller{
 
     public function ban(){
         $this->load->view('inc/admin_header');
+        $this->load->view('inc/admin_sidebar');
         $res['ip']=$this->model_ip->ip(); 
         $this->load->view('view_ip',$res);
         $this->load->view('inc/admin_footer');

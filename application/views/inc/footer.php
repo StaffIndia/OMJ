@@ -96,6 +96,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <script src="<?=base_url()?>asset/js/popper.min.js"></script>
       <script src="<?=base_url()?>asset/js/bootstrap.bundle.min.js"></script>
       <script src="<?=base_url()?>asset/js/bootstrap.min.js"></script>
+      <script src="<?=base_url()?>asset/js/needsharebutton.js"></script>
       <script src="<?=base_url()?>asset/js/scripts.js"></script>
       
  <link rel="stylesheet" href="<?=base_url()?>asset/dist/fastselect.min.css">
@@ -149,6 +150,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0&appId=342104502980983&autoLogAppEvents=1';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
+<script type="text/javascript">
+    new needShareDropdown(document.getElementById('share-button-2'));
+</script>
         <div id="fb-root"></div>
   </body>
 </html>

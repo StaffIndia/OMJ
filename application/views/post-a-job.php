@@ -14,8 +14,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								$msg=$this->session->flashdata('message');
 								
 								if(!empty($msg)){
-								echo  $msg;
-								}
+								  echo  $msg; ?>
+
+                  <div id="share-button-2" class="need-share-button-default" data-share-icon-style="box" data-share-networks="Facebook,Twitter,Linkedin,GooglePlus"></div>
+								<?php }
 							?>
 							
                         <form method="post" action="" enctype='multipart/form-data' >

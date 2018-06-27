@@ -30,6 +30,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <link rel='stylesheet' href="<?=base_url()?>asset/css/bootstrap.min.css">
     <link rel='stylesheet' href="<?=base_url()?>asset/css/style.css">
     <link rel='stylesheet' href="<?=base_url()?>asset/css/responsive.css">
+     <link rel='stylesheet' href="<?=base_url()?>asset/css/share.css">
       
       
     <!-- html5 shiv-->

@@ -147,7 +147,10 @@ return $str;
                             <!-- HERE IS ADDTHIS PLUGIN -->
                             
                             <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                            <div class="addthis_inline_share_toolbox"></div>
+                            <div class="addthis_inline_share_toolbox">
+                                
+                                 <div id="share-button-2" class="need-share-button-default" data-share-icon-style="box" data-share-networks="Facebook,Twitter,Linkedin,GooglePlus"></div>
+                            </div>
 
                         </div>
                         

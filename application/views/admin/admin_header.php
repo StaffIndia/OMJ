@@ -301,4 +301,3 @@
       </div>
     </nav>
   </header>
-  <!-- Left side column. contains the logo and sidebar -->

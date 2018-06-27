@@ -8,9 +8,7 @@ class Admin extends CI_Controller{
     }
     public function index(){
        $this->form_validation->set_rules('un', 'Username', 'required');
-       $this->form_validation->set_rules('pass', 'Password', 'required');    
-        
-        
+       $this->form_validation->set_rules('pass', 'Password', 'required');
         if($this->form_validation->run()==FALSE){
            $this->load->view('admin/admin_header');
            $this->load->view('view_adminsign');
@@ -19,11 +17,12 @@ class Admin extends CI_Controller{
             $data['un']=$this->input->post('un');
             $data['pass']=$this->input->post('pass');
             $res=$this->model_adminsignin->user($data);
+          
             if(!empty($res))
             {
-                $this->session->set_userdata('aID',$result[0]['ADMINID']);
+                $this->session->set_userdata('aID',$res[0]['ADMINID']);
                 $this->session->set_userdata('mail',$res[0]['email']);
-                $this->session->set_userdata('userName',$result[0]['username']);
+                $this->session->set_userdata('userName',$res[0]['username']);
                 redirect('admin_dashboard');
                 
             }else{
